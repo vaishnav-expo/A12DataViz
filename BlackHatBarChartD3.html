@@ -1,0 +1,30 @@
+<!--Dataset : https://corgis-edu.github.io/corgis/csv/state_crime/
+    Reference : https://www.d3-graph-gallery.com/graph/barplot_stacked_hover.html
+    Description : https://idl.cs.washington.edu/files/2017-BlackHatVis-DECISIVe.pdf-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A5BarChartD3</title>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://rawgit.com/susielu/d3-annotation/master/d3-annotation.min.js"></script>
+</head>
+</head>
+<body>
+<h2>What is Black hat chart?</h2>
+<p>
+    Black Hat Visualization is the blanket term we use to describe all of the actions that malicious visualization designers can take to meet their goals. Creating out- right “lying” visualizations is just one small category in this larger space of bad behavior. The below question provides example of how the visualization can be Black Hat.
+</p>
+<h2>Why it is Black hat chart?</h2>
+<ul>
+    <li>It tells only population in the title which makes it ambiguous whether it is total population,percentage,mean or etc? Whose population it is? Which years's population is considered?</li>
+    <li>It intentionally uses misleading colours which makes it hard to compare for users.(Bad/wrong colour scale is used)</li>
+    <li>It doesn't mention the source of the data. So data used can be false or modified.</li>
+    <li>It shows misleading annotation for the Connecticut which gives misleading information.</li>
+    <li>It doesn't provide the tooltip like visualization which would give better understanding even without considering colours but it doesn't provide tooltip as well.</li>
+</ul>
+<div id="my_dataviz"></div>
+<div id="my_legend"></div>
+<script src="BlackHatBarChartD3.js"></script>
+</body>
+</html>
